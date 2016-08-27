@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*顶部*/
+
+.top {
+    height: 136px;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    background-image: url("../images/header_bg.jpg");
+}
+
+.top_t {
+    height: 35px;
+}
+
+.top_m {
+    border-top: 1px solid #333333;
+}
+
+.top_b {
+    height: 100px;
+}
+
+.top_t a {
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 35px;
+    float: right;
+    padding-left: 10px;
+}
+
+.top_b .logo {
+    width: 132px;
+    height: 100px;
+    background: url("../images/index_icons.png") no-repeat 0px 20px;
+    float: left;
+}
+
+.top_b .guide {
+    height: 100px;
+    float: left;
+    margin-left: 71px;
+}
+
+.top_b .guide li {
+    float: left;
+    line-height: 100px;
+    font-size: 16px;
+    padding-right: 31px;
+}
+
+.top_b .guide li a {
+    color: #FFFFFF;
+}
+
+.top_b .search {
+    float: right;
+    width: 205px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.top_b .search input {
+    /*width: 205px;*/
+    width: 158px;
+    /*height: 40px;*/
+    height: 12px;
+    background: url("../images/index_icons.png") no-repeat 175px -90px;
+    background-color: #2B2B2B;
+    border: none;
+    padding: 14px 35px 14px 12px;
+    outline: none;
+    color: #FFFFFF;
+}
+
+.top_b .search input:focus {
+    border: none;
+}
+
+/*顶部*/
+
+/*banner*/
+.banner {
+    padding-top: 136px;
+}
+
+/*banner*/
+
+/*品牌部分*/
+.brand {
+    text-align: center;
+    margin-top: 29px;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 22px;
+    color: #0091FF;
+}
+
+.choose {
+    color: #757E91;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.brand_all {
+    float: left;
+    width: 118px;
+    height: 118px;
+    border: 1px solid #ECEEF1;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*品牌部分*/
+/*系统部分*/
+.opreation {
+    text-align: center;
+    margin-top: 29px;
+    overflow: hidden;
+}
+
+.opr_all {
+    float: left;
+    width: 258px;
+    height: 258px;
+    border: 1px solid #ECEEF1;
+    margin: 10px;
+}
+
+/*系统部分*/
+/*手机部分*/
+.phone {
+    text-align: center;
+    margin-top: 29px;
+    overflow: hidden;
+}
+
+.phone_all {
+    float: left;
+    width: 260px;
+    height: 358px;
+    border: 1px solid #ECEEF1;
+    margin: 9px;
+    overflow:hidden;
+}
+
+.phone_all img{
+    position: relative;
+}
+
+.phone_name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #31343B;
+    line-height: 30px;
+}
+
+.phone_des {
+    font-size: 13px;
+    color: #ABB0BC;
+    line-height: 43px;
+}
+
+.phone_all button {
+    width: 120px;
+    height: 40px;
+    background-color: #0091FF;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.phone_all button:hover {
+    width: 118px;
+    height: 38px;
+    background-color: #FFFFFF;
+    border: 1px solid #0091FF;
+    font-size: 16px;
+    color: #0091FF;
+    cursor: pointer;
+}
+
+/*手机部分*/
+/*底部*/
+.bottom {
+    height: 344px;
+    background-color: #000000;
+    margin-top: 63px;
+}
+
+.bottom_t {
+    height: 185px;
+    padding-top: 54px;
+}
+
+.bottom_t .logo {
+    width: 201px;
+    height: 185px;
+    background: url("../images/logo_footer.png") no-repeat 0px 0px;
+    float: left;
+}
+
+.bottom_t dl {
+    float: left;
+    width: 201px;
+    height: 185px;
+}
+
+.bottom_t dl dt {
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-bottom: 21px;
+}
+
+.bottom_t dl dd {
+    height: 30px;
+}
+
+.bottom_t dl dd a {
+    font-size: 13px;
+    color: #999999;
+}
+
+.bottom_t .app {
+    float: right;
+    width: 115px;
+    height: 185px;
+}
+
+.bottom_m {
+    border-top: 1px solid #333333;
+}
+
+.bottom_b {
+    margin-top: 24px;
+    height: 33px;
+}
+
+.bottom_b .license {
+    float: right;
+    /*height: 33px;*/
+    padding-top: 10px;
+}
+
+.bottom_b .govicon {
+    float: right;
+}
+
+.bottom_b p {
+    float: right;
+    padding-top: 10px;
+}
+
+.bottom_b p a {
+    font-size: 11px;
+    color: #666666;
+    padding: 0 10px;
+}
+
+/*底部*/
+
+.toTop {
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/toTop.png");
+    display: none;
+}
+
+.toTop a {
+    display: block;
+    width: 40px;
+    height: 40px;
+}

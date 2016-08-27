@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+   }
+
+.wrap {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+/*header部分开始*/
+#lab_header {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 100;
+}
+
+#header_log {
+    width: 128px;
+    height: 22px;
+    background: url("../images/header_logo.png") no-repeat 0 0;
+    margin: 18px 0 0 16px;
+    z-index: 101;
+    float: left;
+}
+/*#abc {*/
+    /*opacity: 1;*/
+/*}*/
+#header_nav {
+    height: 60px;
+    float: right;
+    background-color: #000;
+    opacity: 1;
+    /*z-index: 120;*/
+}
+#header_nav li {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    z-index: 101;
+    text-align: center;
+}
+#header_nav li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.active{
+    background-color: #1763A7;
+}
+
+/*header部分结束*/
+
+
+
+/*轮播图部分开始*/
+
+#lab_slider {
+    width: 1349px;
+    height: 613px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.slider_show {
+    width:  1349px;
+    height: 613px;
+    position: relative;
+    overflow: hidden;
+}
+#lab_slider img {
+    width: 1349px;
+    height: 615px;
+}
+
+.slider_show ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+}
+.slider_show ul li{
+
+    float: left;
+    position: relative;
+}
+
+#lab_slider .slider_title {
+    width: 834px;
+    height: 138px;
+    background: url("../images/imgesTitle.png") no-repeat 0 -40px ;
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    z-index: 99;
+    text-align: center;
+}
+#lab_slider .tow {
+    background: url("../images/imgesTitle.png")  no-repeat  0  -240px ;
+}
+#lab_slider .three {
+    background: url("../images/imgesTitle.png")  no-repeat  0  -384px ;
+}
+
+#lab_slider .four {
+    height: 213px;
+    background: url("../images/imgesTitle.png")  no-repeat  0  -610px ;
+}
+
+.slider_show ol {
+    position: absolute;
+    right: 648px;
+    bottom: 32px;
+    line-height: 20px;
+    text-align: center;
+}
+.slider_show ol li {
+    float: left;
+    width: 6px;
+    height: 6px;
+    background: url("../images/imgesTitle.png") no-repeat -72px -778px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.slider_show ol li.current {
+    background: url("../images/imgesTitle.png") no-repeat -66px -778px;
+}
+
+#arr span {
+    width: 33px;
+    height: 62px;
+    line-height: 62px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    background: url("../images/imgesTitle.png") no-repeat  0 -778px;
+    cursor: pointer;
+    text-align: center;
+}
+#arr #left {
+    left: 60px;
+}
+#arr #right {
+    background: url("../images/imgesTitle.png") no-repeat  -33px -778px;
+    right: 60px;
+}
+
+
+#lab_slider .slider_tip{
+    width: 17px;
+    height: 8px;
+    margin-left: -9px;
+    background: url("../images/imgesTitle.png") no-repeat -78px -778px;
+    /*background-color: red;*/
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+}
+
+/*轮播图部分结束*/
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ZEALER LAB</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" class="ico/">
+
+
+</head>
+<body>
+<!--header部分开始-->
+<div id="lab_header">
+    <div class="wrap">
+        <a href="javascript:(0);" id="header_log"></a>
+            <ul id="header_nav">
+                <li><a href="javascript:(0);"  class="active">首页</a></li>
+                <li><a href="javascript:(0);" >内容</a></li>
+                <li><a href="javascript:(0);" >简介</a></li>
+                <li><a href="javascript:(0);" >咨询</a></li>
+                <li><a href="javascript:(0);" >众测</a></li>
+            </ul>
+    </div>
+</div>
+<!--header部分结束-->
+
+<!--自动轮播图部分开始-->
+<div id="lab_slider">
+    <div class="slider_show">
+        <ul class="slider_moving">
+            <li>
+                <a href="javascript:(0)">
+                    <img src="images/banner1.jpg" alt="" />
+                    <span class="slider_title"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:(0)">
+                    <img src="images/banner2.jpg" alt=""/>
+                    <span class="slider_title tow"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:(0)">
+                    <img src="images/banner3.jpg" alt=""/>
+                    <span class="slider_title three"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:(0)">
+                    <img src="images/banner4.jpg" alt=""/>
+                    <span class="slider_title four"></span>
+                </a>
+            </li>
+        </ul>
+        <ol></ol>
+    </div>
+    <div id="arr"><span id="left"></span><span id="right"></span></div>
+    <div class="slider_tip"></div>
+</div>
+<!--自动轮播图部分结束-->
+
+<script src="jquery-1.12.3.js"></script>
+<script>
+    var pic = 0;
+    var lis = $(".slider_moving li");
+    var imgWidth = parseInt($(".slider_moving ").find("img").css("width"));
+    var obj=$(".slider_moving");
+    $(function(){
+
+        for(var i=0; i<lis.length; i++) {
+            $(".slider_show ol").append("<li></li>");
+            $("ol > li:eq(0)").addClass("current");
+        }
+        $("ol").children("li").on("click",function(){
+            clearInterval(obj.timerId);
+            $(this).addClass("current").siblings("li").removeClass("current");
+            $(".slider_moving").stop().animate({left : -($(this).index()*imgWidth)},1000);
+            aotuPlay(obj);
+        })
+        var imgFirst = $(".slider_moving > li:eq(0)").clone(true);
+//        console.log(imgFirst);
+        $(".slider_moving").append(imgFirst);
+//        console.log(imgWidth);
+        $("#left").click(function(){
+            clearInterval(obj.timerId);
+            if(pic == 0){
+                pic = lis.length;
+               $(".slider_moving").css("left",-imgWidth*lis.length);
+            }
+            pic--;
+            SelectPoint(pic);
+            tipMove();
+//            console.log(pic);
+            $(".slider_moving").stop().animate({left: -(pic*imgWidth)});
+            aotuPlay(obj);
+        })
+        $("#right").click(function(){
+            clearInterval(obj.timerId);
+            if(pic == lis.length){
+                pic = 0;
+                $(".slider_moving").css("left", 0);
+            }
+            tipMove();
+            pic++;
+            SelectPoint(pic);
+            $(".slider_moving").stop().animate({left: -(pic*imgWidth)})
+            aotuPlay(obj);
+        })
+        aotuPlay(obj);
+    });
+
+
+
+    function aotuPlay(obj){
+        clearInterval(obj.timerId);
+        obj.timerId = setInterval(function(){
+            if(pic == lis.length){
+                pic = 0;
+                $(".slider_moving").css("left", 0);
+            }
+            tipMove();
+            pic++;
+            SelectPoint(pic);
+            $(".slider_moving").stop().animate({left: -(pic*imgWidth)})
+        },2000);
+
+    }
+
+    function SelectPoint(index){
+        $(".slider_show ol li").removeClass("current");
+        var i = index === 4 ? 0 : index;
+        $(".slider_show ol li").eq(i).addClass("current");
+    }
+
+    function tipMove(){
+        $(".slider_tip").fadeIn(500).fadeOut(500);
+    }
+
+
+
+</script>
+</body>
+</html>

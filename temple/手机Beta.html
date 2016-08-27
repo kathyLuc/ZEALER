@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ZEALER测评工具-最全的手机测评数据和参数价格对比中心</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/imagehover.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <script src="../js/jquery-1.12.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".toTop").css("position", "fixed");
+            $(".toTop").css("right", "20px");
+            $(".toTop").css("bottom", "20px");
+
+            $(window).scroll(function () {
+                var stHeight = $(document).scrollTop();
+
+//                锚点定位
+                if (stHeight >= 200) {
+                    $(".toTop").slideDown();
+//                    $(".toTop").css("display","block");
+                } else {
+                    $(".toTop").slideUp();
+                    $(".toTop").css("display", "none");
+                }
+
+//                顶部固定
+
+
+//                手机动画
+                $(".phone_all").mouseenter(function () {
+                    $(this).find("img").stop().animate({
+                        left: 50,
+                        top: 0
+                    }, 1000, function () {
+                        $(this).stop().animate({
+                            left: 30,
+                            top: -100
+                        }, function () {
+                            $(this).stop().animate({
+                                left: 20,
+                                top: 0
+                            }, function () {
+                                $(this).stop().animate({
+                                    left: -10,
+                                    top: -3
+                                }, function () {
+                                    $(this).stop().animate({
+                                        left: 20,
+                                        top: 5
+                                    }, function () {
+                                        $(this).stop().animate({
+                                            left: 30,
+                                            top: -3
+                                        }, function () {
+                                            $(this).stop().animate({
+                                                left: 40,
+                                                top: 5
+                                            }, function () {
+                                                $(this).stop().animate({
+                                                    left: 20,
+                                                    top: -5
+                                                }, function () {
+                                                    $(this).stop().animate({
+                                                        left: 0,
+                                                        top: 0
+                                                    })
+                                                })
+                                            })
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                });
+
+                $(".phone_all").mouseleave(function () {
+
+                    $(".phone_all").find("img").stop(true, true);
+
+                });
+
+            })
+
+        })
+    </script>
+</head>
+<body>
+<!--定位锚点-->
+<a id="Top"></a>
+
+<!--定位锚点-->
+
+<!--bannerTOP开始-->
+<div class="top">
+    <div class="top_t wrap">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+    </div>
+    <div class="top_m"></div>
+    <div class="top_b wrap">
+        <a href="#" class="logo"></a>
+        <ul class="guide">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="#">视频</a></li>
+            <li><a href="手机Beta.html">手机 <sub>Beta</sub></a></li>
+            <li><a href="#">社区</a></li>
+            <li><a href="#">FIX</a></li>
+            <li><a href="lab.html">实验室</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="#">APP下载</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="搜点什么..."/>
+        </div>
+    </div>
+</div>
+
+<!--bannerTOP结束-->
+<!--banner-->
+<div class="banner">
+    <img src="../images/banner.png" alt=""/>
+</div>
+<!--banner-->
+<!--品牌部分-->
+<div class="wrap brand">
+    <p class="name">品牌</p>
+    <p class="choose">请选择手机品牌</p>
+    <div class="brand_main">
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/apple.png">
+            <figcaption>
+                <img src="../images/appleblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/asus.png">
+            <figcaption>
+                <img src="../images/asusblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/blackberry.png">
+            <figcaption>
+                <img src="../images/blackberryblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/google.png">
+            <figcaption>
+                <img src="../images/googleblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/htc.png">
+            <figcaption>
+                <img src="../images/htcblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/iuni.png">
+            <figcaption>
+                <img src="../images/iuniblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/lg.png">
+            <figcaption>
+                <img src="../images/lgblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/microsoft.png">
+            <figcaption>
+                <img src="../images/microsoftblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/moto.png">
+            <figcaption>
+                <img src="../images/motoblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/nokia.png">
+            <figcaption>
+                <img src="../images/nokiablue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/oppo.png">
+            <figcaption>
+                <img src="../images/oppoblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/samsung.png">
+            <figcaption>
+                <img src="../images/samsungblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/sony.png">
+            <figcaption>
+                <img src="../images/sonyblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/tcl.png">
+            <figcaption>
+                <img src="../images/tclblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/vivo.png">
+            <figcaption>
+                <img src="../images/vivoblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in brand_all ">
+            <img src="../images/....png">
+            <figcaption>
+                <img src="../images/...blue.png">
+            </figcaption>
+        </figure>
+    </div>
+</div>
+<!--品牌部分-->
+<!--系统-->
+<div class="wrap opreation">
+    <p class="name">系统</p>
+    <p class="choose">请选择手机操作系统</p>
+    <div class="opr_main">
+        <figure class="imghvr-zoom-in opr_all ">
+            <img src="../images/android.png">
+            <figcaption>
+                <img src="../images/androidblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in opr_all ">
+            <img src="../images/ios.png">
+            <figcaption>
+                <img src="../images/iosblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in opr_all ">
+            <img src="../images/wp.png">
+            <figcaption>
+                <img src="../images/wpblue.png">
+            </figcaption>
+        </figure>
+        <figure class="imghvr-zoom-in opr_all ">
+            <img src="../images/bbos.png">
+            <figcaption>
+                <img src="../images/bbosblue.png">
+            </figcaption>
+        </figure>
+
+
+    </div>
+</div>
+<!--系统-->
+<!--手机-->
+<div class="wrap phone">
+    <p class="name">手机</p>
+    <p class="choose">请选择手机</p>
+    <div class="phone_main">
+        <div class="phone_all">
+            <a href="#"><img src="../images/htc10.png" alt="#"/></a>
+            <p class="phone_name">HTC 10 lifestyle</p>
+            <p class="phone_des">金属机身 BoomSound</p>
+            <button>详情</button>
+        </div>
+        <div class="phone_all">
+            <a href="#"><img src="../images/lg%20g5.png" alt="#"/></a>
+            <p class="phone_name">LG G5</p>
+            <p class="phone_des">金属机身 双摄像头</p>
+            <button>详情</button>
+        </div>
+        <div class="phone_all">
+            <a href="#"><img src="../images/iphone%20se.png" alt="#"/></a>
+            <p class="phone_name">iPhone SE</p>
+            <p class="phone_des">适合单手操作 iOS</p>
+            <button>详情</button>
+        </div>
+        <div class="phone_all">
+            <a href="#"><img src="../images/oppo%20r9.png" alt="#"/></a>
+            <p class="phone_name">OPPO R9 Plus</p>
+            <p class="phone_des">超薄机身 VOOC闪冲</p>
+            <button>详情</button>
+        </div>
+        <div class="phone_all">
+            <a href="#"><img src="../images/lumia650.png" alt="#"/></a>
+            <p class="phone_name">Lumia 650</p>
+            <p class="phone_des">Windows 10 系统</p>
+            <button>详情</button>
+        </div>
+        <div class="phone_all">
+            <a href="#"><img src="../images/galaxy%20s7.png" alt="#"/></a>
+            <p class="phone_name">Galaxy S7</p>
+            <p class="phone_des">骁龙 820 2.5D 玻璃</p>
+            <button>详情</button>
+        </div>
+        <div class="phone_all">
+            <a href="#"><img src="../images/galaxy%20s7%20edge.png" alt="#"/></a>
+            <p class="phone_name">Galaxy S7 edge</p>
+            <p class="phone_des">曲面屏 骁龙 820</p>
+            <button>详情</button>
+        </div>
+        <div class="phone_all">
+            <a href="#"><img src="../images/xiaomi5.png" alt="#"/></a>
+            <p class="phone_name">小米 5</p>
+            <p class="phone_des">3D 玻璃后盖 骁龙 820</p>
+            <button>详情</button>
+        </div>
+
+
+    </div>
+</div>
+<!--手机-->
+<!--底部-->
+<div class="bottom ">
+    <div class="bottom_t wrap">
+        <div class="logo"></div>
+        <dl>
+            <dt>业务</dt>
+            <dd><a href="#">手机服务</a></dd>
+            <dd><a href="#">实验室</a></dd>
+            <dd><a href="#">社区</a></dd>
+        </dl>
+        <dl>
+            <dt>关于我们</dt>
+            <dd><a href="#">会员条款</a></dd>
+            <dd><a href="#">加入我们</a></dd>
+            <dd><a href="#">关于ZEALER</a></dd>
+        </dl>
+        <dl>
+            <dt>关注我们</dt>
+            <dd><a href="#">新浪微博</a></dd>
+            <dd><a href="#">联系我们</a></dd>
+        </dl>
+        <dl>
+            <dt>官方微信</dt>
+            <dd><img src="../images/wechatQR.png" alt="#"/></dd>
+        </dl>
+        <dl class="app">
+            <dt>APP下载</dt>
+            <dd><img src="../images/appQR.png" alt="#"/></dd>
+        </dl>
+    </div>
+    <div class="bottom_m wrap"></div>
+    <div class="bottom_b wrap">
+        <img src="../images/newGovIcon.gif" height="33px" alt="#" class="govicon"/>
+        <p><a href="#">粤ICP备12076188号-1 </a></p>
+        <img src="../images/global_footer_lisence.png" alt="#" class="license"/>
+    </div>
+</div>
+<!--底部-->
+
+<div class="toTop">
+    <a href="#Top"></a>
+</div>
+
+
+</body>
+</html>
